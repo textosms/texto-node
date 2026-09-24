@@ -1,0 +1,46 @@
+{
+  "name": "@textoau/sdk",
+  "version": "1.0.0",
+  "description": "Official Node.js and TypeScript SDK for the Texto SMS API.",
+  "license": "MIT",
+  "author": "Texto (Floop Pty Ltd)",
+  "homepage": "https://texto.com.au/developers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/textosms/texto-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/textosms/texto-node/issues",
+    "email": "support@texto.com.au"
+  },
+  "keywords": ["sms", "texto", "messaging", "australia", "a2p", "api"],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
