@@ -4,7 +4,7 @@
   "description": "Official Node.js and TypeScript SDK for the Texto SMS API.",
   "license": "MIT",
   "author": "Texto (Floop Pty Ltd)",
-  "homepage": "https://texto.com.au/developers",
+  "homepage": "https://texto.com.au/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/textosms/texto-node.git"
