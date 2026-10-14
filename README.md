@@ -151,6 +151,7 @@ Network failures and timeouts throw `TextoConnectionError`.
 
 - [SMS API reference](https://texto.com.au/api): https://texto.com.au/api
 - Email: support@texto.com.au
+- Website: https://texto.com.au
 
 ## License
 
